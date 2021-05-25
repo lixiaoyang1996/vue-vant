@@ -1,0 +1,71 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  position: relative;
+  > .app {
+    height: 100%;
+  }
+}
+.basic-layout {
+  box-sizing: border-box;
+  height: 100%;
+  padding-bottom: 50px;
+  > .container {
+    overflow: auto;
+    box-sizing: border-box;
+    height: 100%;
+    padding-top: 46px;
+    background-color: #f9f9f9;
+  }
+}
+
+
+// .van-nav-bar__title {
+//   color: #444;
+//   // font-size: 18px;
+//   font-weight: bold;
+// }
+
+
+.van-form {
+  .van-field__error-message {
+    color: #f00;
+  }
+}
+
+.m-select {
+  position: relative;
+  &::after {
+    position: absolute;
+    right: 16px;
+    bottom: 0;
+    left: 16px;
+    box-sizing: border-box;
+    content: " ";
+    transform: scaleY(.5);
+    pointer-events: none;
+    border-bottom: 1px solid #EBEDF0;
+  }
+  > .select-cell {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .van-cell__title {
+    flex: none;
+    width: 6.2em;
+    margin-right: 12px;
+  }
+  .van-field__error-message {
+    position: relative;
+    z-index: 100;
+  }
+  .select-option {
+    color: #323233;
+  }
+}
